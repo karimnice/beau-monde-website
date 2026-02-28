@@ -1,0 +1,41 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+interface Props {
+  name: string;
+  title: string;
+  slug: string;
+  category: string;
+  photo?: ImageMetadata;
+}
+
+const { name, title, slug, category, photo } = Astro.props;
+---
+
+<a
+  href={`/professionals/${slug}`}
+  class="group block rounded-lg bg-white shadow-sm transition-shadow hover:shadow-md overflow-hidden"
+  data-category={category}
+>
+  {photo ? (
+    <Image
+      src={photo}
+      alt={name}
+      class="aspect-square w-full object-cover"
+      widths={[300, 500]}
+    />
+  ) : (
+    <div class="flex aspect-square items-center justify-center bg-gradient-to-br from-cream to-gray-100">
+      <span class="font-heading text-2xl font-bold text-gold/30">
+        {name.charAt(0)}
+      </span>
+    </div>
+  )}
+  <div class="p-5">
+    <h3 class="font-heading text-base font-semibold text-charcoal group-hover:text-gold transition-colors">
+      {name}
+    </h3>
+    <p class="mt-1 text-sm text-muted">{title}</p>
+  </div>
+</a>

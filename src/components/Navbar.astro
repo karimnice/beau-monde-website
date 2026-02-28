@@ -1,0 +1,103 @@
+---
+import { Image } from "astro:assets";
+import logo from "../assets/logo/logo-full-color.png";
+
+const currentPath = Astro.url.pathname;
+
+const links = [
+  { href: "/", label: "Home" },
+  { href: "/leasing", label: "Leasing" },
+];
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+  <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+    <a href="/">
+      <Image src={logo} alt="Beau Monde Salon Suites" width={150} height={100} class="h-10 w-auto" />
+    </a>
+
+    {/* Desktop nav */}
+    <ul class="hidden items-center gap-8 md:flex">
+      {links.map((link) => (
+        <li>
+          <a
+            href={link.href}
+            class:list={[
+              "text-sm font-medium tracking-wide uppercase transition-colors hover:text-gold",
+              currentPath === link.href ? "text-gold" : "text-muted",
+            ]}
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+      <li>
+        <a
+          href="tel:+19195518406"
+          class="inline-block rounded-sm bg-gold px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-gold-dark"
+        >
+          Call Now
+        </a>
+      </li>
+    </ul>
+
+    {/* Mobile menu button */}
+    <button
+      id="mobile-menu-btn"
+      class="flex flex-col gap-1.5 md:hidden"
+      aria-label="Toggle menu"
+    >
+      <span class="block h-0.5 w-6 bg-charcoal transition-transform" id="bar1"></span>
+      <span class="block h-0.5 w-6 bg-charcoal transition-opacity" id="bar2"></span>
+      <span class="block h-0.5 w-6 bg-charcoal transition-transform" id="bar3"></span>
+    </button>
+  </nav>
+
+  {/* Mobile menu */}
+  <div id="mobile-menu" class="hidden border-t border-gray-100 bg-white px-6 pb-6 md:hidden">
+    <ul class="flex flex-col gap-4 pt-4">
+      {links.map((link) => (
+        <li>
+          <a
+            href={link.href}
+            class:list={[
+              "block text-sm font-medium tracking-wide uppercase transition-colors hover:text-gold",
+              currentPath === link.href ? "text-gold" : "text-muted",
+            ]}
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+      <li>
+        <a
+          href="tel:+19195518406"
+          class="inline-block rounded-sm bg-gold px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-gold-dark"
+        >
+          Call Now
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+{/* Spacer for fixed navbar */}
+<div class="h-[72px]"></div>
+
+<script>
+  const btn = document.getElementById("mobile-menu-btn");
+  const menu = document.getElementById("mobile-menu");
+  const bar1 = document.getElementById("bar1");
+  const bar2 = document.getElementById("bar2");
+  const bar3 = document.getElementById("bar3");
+
+  btn?.addEventListener("click", () => {
+    const isOpen = !menu?.classList.contains("hidden");
+    menu?.classList.toggle("hidden");
+    bar1?.classList.toggle("translate-y-[4px]");
+    bar1?.classList.toggle("rotate-45");
+    bar2?.classList.toggle("opacity-0");
+    bar3?.classList.toggle("-translate-y-[4px]");
+    bar3?.classList.toggle("-rotate-45");
+  });
+</script>

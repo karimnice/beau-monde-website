@@ -1,0 +1,19 @@
+---
+interface Props extends astroHTML.JSX.AnchorHTMLAttributes {
+  href: string;
+  variant?: "primary" | "outline";
+  class?: string;
+}
+
+const { href, variant = "primary", class: className = "", ...rest } = Astro.props;
+
+const baseClasses = "inline-block rounded-sm px-6 py-3 text-sm font-semibold tracking-wide uppercase transition-colors";
+const variantClasses = {
+  primary: "bg-gold text-white hover:bg-gold-dark",
+  outline: "border-2 border-gold text-gold hover:bg-gold hover:text-white",
+};
+---
+
+<a href={href} class:list={[baseClasses, variantClasses[variant], className]} {...rest}>
+  <slot />
+</a>

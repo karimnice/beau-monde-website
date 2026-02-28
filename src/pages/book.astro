@@ -1,0 +1,45 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const url = Astro.url.searchParams.get("url");
+const name = Astro.url.searchParams.get("name") || "Book Now";
+---
+
+<Layout title={`Book with ${name} | Beau Monde Salon Suites`}>
+  {url ? (
+    <div class="flex flex-col" style="height: calc(100vh - 72px);">
+      <div class="flex items-center justify-between bg-cream px-6 py-3 border-b border-gray-200">
+        <div class="flex items-center gap-3">
+          <a
+            href="javascript:history.back()"
+            class="inline-flex items-center gap-1 text-sm text-muted transition-colors hover:text-gold"
+          >
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            Back
+          </a>
+          <span class="text-sm font-medium text-charcoal">Booking with {name}</span>
+        </div>
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-xs text-muted transition-colors hover:text-gold"
+        >
+          Open in new tab
+        </a>
+      </div>
+      <iframe
+        src={url}
+        class="flex-1 w-full border-0"
+        title={`Book with ${name}`}
+        allow="payment"
+      ></iframe>
+    </div>
+  ) : (
+    <div class="flex items-center justify-center py-32">
+      <p class="text-muted">No booking URL provided.</p>
+    </div>
+  )}
+</Layout>

@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Montserrat", sans-serif;
+
+  --color-cream: #FAFAF8;
+  --color-gold: #C9A96E;
+  --color-gold-dark: #B08D4F;
+  --color-charcoal: #2C2C2C;
+  --color-muted: #6B7280;
+}

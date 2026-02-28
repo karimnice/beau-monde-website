@@ -1,0 +1,192 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+
+import exterior from "../assets/salon/exterior.jpg";
+import suitePrivate from "../assets/salon/suite-private.jpg";
+import suiteFurnished from "../assets/salon/suite-furnished.jpg";
+import shampoolBowl from "../assets/salon/shampoo-bowl.jpg";
+import salon1 from "../assets/salon/salon-1.jpg";
+import salon2 from "../assets/salon/salon-2.jpg";
+
+const suiteAmenities = [
+  "High-End Equipment Including an Infra-Red Processor",
+  "Stand-Behind Shampoo Bowl and Chair",
+  "Large Mirrors",
+  "Sliding Glass Doors",
+  "Acoustical Ceiling Tiles",
+  "Instant Hot Water",
+  "Built-in Cabinets with Sink",
+  "Storage and Tool Cabinet with Dedicated Outlets",
+  "Central Vacuum",
+  "Anti-Fatigue Mats",
+  "State of the Art Security System",
+  "Hi-Speed Internet and Wi-Fi",
+  "Complimentary Double Washers and Dryers",
+  "Community Break Room with Refrigerator, Microwave, and Seating",
+];
+
+const highlights = [
+  {
+    icon: "thermostat",
+    title: "Private Climate Control",
+    description: "Each suite operates with its own thermostat, allowing you to regulate the temperature of your private space.",
+  },
+  {
+    icon: "air",
+    title: "Advanced Air Quality",
+    description: "A state-of-the-art HVAC system brings fresh air into each private suite, using cutting-edge technology to clean the air you breathe.",
+  },
+  {
+    icon: "security",
+    title: "Safety & Comfort",
+    description: "Located in The Block on Main in Holly Springs, our salon features top-of-the-line security and a welcoming, professional environment.",
+  },
+];
+---
+
+<Layout title="Lease a Suite | Beau Monde Salon Suites">
+  {/* Hero */}
+  <section class="relative">
+    <div class="absolute inset-0">
+      <Image
+        src={exterior}
+        alt="Beau Monde Salon Suites exterior"
+        class="h-full w-full object-cover"
+        widths={[800, 1200, 1600]}
+      />
+      <div class="absolute inset-0 bg-charcoal/60"></div>
+    </div>
+    <div class="relative mx-auto max-w-3xl px-6 py-28 text-center text-white">
+      <p class="font-heading text-sm font-semibold tracking-[0.2em] uppercase text-gold">
+        Holly Springs, NC
+      </p>
+      <h1 class="mt-3 font-heading text-4xl font-bold md:text-5xl">
+        Grow Your Business
+      </h1>
+      <p class="mt-4 text-lg text-gray-200">
+        Be your own boss in a luxury suite designed for beauty professionals.
+      </p>
+      <div class="mt-8">
+        <Button href="tel:+19195518406">Schedule a Tour</Button>
+      </div>
+    </div>
+  </section>
+
+  {/* About */}
+  <section class="mx-auto max-w-6xl px-6 py-20">
+    <div class="grid items-center gap-12 md:grid-cols-2">
+      <div>
+        <h2 class="font-heading text-3xl font-bold text-charcoal">
+          The Beau Monde Advantage
+        </h2>
+        <p class="mt-6 leading-relaxed text-muted">
+          Opened in August 2021, Beau Monde Salon Suites is a locally owned boutique salon suite concept &mdash; the first of its kind in Holly Springs. Our professional and upscale salon features 8 single and 5 double bright and airy suites with plenty of windows and abundant natural light.
+        </p>
+        <p class="mt-4 leading-relaxed text-muted">
+          We offer exceptional professionals the opportunity to own and operate their own business in a beautiful environment without worrying about facility upkeep. Set your own hours, set your own rates, sell the products of your choice, and keep 100% of your profits.
+        </p>
+      </div>
+      <Image
+        src={suiteFurnished}
+        alt="Furnished salon suite"
+        class="rounded-lg"
+        widths={[400, 800]}
+      />
+    </div>
+  </section>
+
+  {/* Suite Amenities */}
+  <section class="bg-cream py-20">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="text-center">
+        <h2 class="font-heading text-3xl font-bold text-charcoal">
+          Each Move-In Ready Suite Offers
+        </h2>
+        <p class="mx-auto mt-3 max-w-2xl text-muted">
+          Everything you need to start serving clients from day one.
+        </p>
+      </div>
+
+      <div class="mt-12 grid gap-12 md:grid-cols-2">
+        <div class="grid grid-cols-2 gap-3">
+          <Image
+            src={suitePrivate}
+            alt="Private salon suite"
+            class="col-span-2 rounded-lg"
+            widths={[400, 800]}
+          />
+          <Image
+            src={shampoolBowl}
+            alt="Shampoo bowl station"
+            class="rounded-lg"
+            widths={[400]}
+          />
+          <Image
+            src={salon1}
+            alt="Salon interior"
+            class="rounded-lg"
+            widths={[400]}
+          />
+        </div>
+
+        <ul class="grid content-center gap-3">
+          {suiteAmenities.map((amenity) => (
+            <li class="flex items-start gap-3 rounded-lg bg-white px-4 py-3 shadow-sm">
+              <svg class="mt-0.5 h-5 w-5 shrink-0 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-sm text-charcoal">{amenity}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  {/* Highlights */}
+  <section class="mx-auto max-w-6xl px-6 py-20">
+    <div class="grid gap-8 md:grid-cols-3">
+      {highlights.map((item) => (
+        <div class="rounded-lg border border-gray-100 p-8 text-center">
+          <div class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-gold/10">
+            {item.icon === "thermostat" && (
+              <svg class="h-7 w-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            )}
+            {item.icon === "air" && (
+              <svg class="h-7 w-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15h10.5a3 3 0 003-3 3 3 0 00-3-3H3m4 10h5.5a2.5 2.5 0 002.5-2.5 2.5 2.5 0 00-2.5-2.5H7m0-8h3.5A2.5 2.5 0 0013 6.5 2.5 2.5 0 0010.5 4H7" />
+              </svg>
+            )}
+            {item.icon === "security" && (
+              <svg class="h-7 w-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+              </svg>
+            )}
+          </div>
+          <h3 class="mt-4 font-heading text-lg font-bold text-charcoal">{item.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-muted">{item.description}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  {/* CTA */}
+  <section class="bg-charcoal py-20">
+    <div class="mx-auto max-w-3xl px-6 text-center">
+      <h2 class="font-heading text-3xl font-bold text-white">
+        Ready to Join Beau Monde?
+      </h2>
+      <p class="mt-4 text-gray-300">
+        To rent one of our beautiful suites or schedule a tour, give us a call. We'd love to show you around.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <Button href="tel:+19195518406">Call (919) 551-8406</Button>
+        <Button href="/" variant="outline">Meet Our Professionals</Button>
+      </div>
+    </div>
+  </section>
+</Layout>
