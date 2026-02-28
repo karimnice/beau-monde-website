@@ -8,6 +8,7 @@ services:
   - "Haircuts"
   - "Color"
   - "Styling"
+  - "Blowjobs"
 bookingUrl: "https://christinaphillips.glossgenius.com/"
 instagram: "https://www.instagram.com/chrisphillipshairlounge/"
 order: 6
