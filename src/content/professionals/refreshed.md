@@ -9,5 +9,6 @@ services:
   - "Chemical Peels"
   - "Skincare Treatments"
 instagram: "https://www.instagram.com/refreshedsalon/"
-order: 11
+suite: "Suite 13"
+order: 15
 ---

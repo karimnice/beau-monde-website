@@ -11,5 +11,6 @@ services:
 bookingUrl: "https://mindybunt.glossgenius.com"
 instagram: "https://www.instagram.com/hairbymindyb/"
 phone: "919-609-2780"
-order: 7
+suite: "Suite 10"
+order: 11
 ---

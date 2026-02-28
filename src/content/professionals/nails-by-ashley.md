@@ -9,5 +9,6 @@ services:
   - "Manicures"
 bookingUrl: "https://nails-by-ashley-105135.square.site/"
 instagram: "https://www.instagram.com/nailsby.ashleydang"
-order: 13
+suite: "Suite 7"
+order: 8
 ---

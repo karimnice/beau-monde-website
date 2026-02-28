@@ -11,5 +11,6 @@ services:
   - "Blowjobs"
 bookingUrl: "https://christinaphillips.glossgenius.com/"
 instagram: "https://www.instagram.com/chrisphillipshairlounge/"
-order: 6
+suite: "Suite 4A"
+order: 4
 ---

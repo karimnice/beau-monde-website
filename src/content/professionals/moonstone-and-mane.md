@@ -13,5 +13,6 @@ bookingUrl: "https://moonstoneandmane.comb.works/"
 instagram: "https://www.instagram.com/moonstoneandmane/"
 facebook: "https://www.facebook.com/profile.php?id=61577220361320"
 phone: "931-561-7190"
-order: 4
+suite: "Suite 1B"
+order: 1
 ---

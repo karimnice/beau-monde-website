@@ -1,7 +1,10 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import ProfessionalCard from "../components/ProfessionalCard.astro";
 import { getCollection } from "astro:content";
+import heroLogo from "../assets/logo/logo-hero.png";
+import heroBg from "../assets/hero/hero-bg.jpg";
 
 const professionals = (await getCollection("professionals")).sort(
   (a, b) => a.data.order - b.data.order
@@ -17,15 +20,32 @@ const categories = [
 ---
 
 <Layout>
-  <section class="bg-cream py-16">
-    <div class="mx-auto max-w-3xl px-6 text-center">
-      <p class="font-heading text-sm font-semibold tracking-[0.2em] uppercase text-gold">
-        Holly Springs, NC
+  <section class="relative overflow-hidden bg-cream py-10 md:py-14">
+    <Image
+      src={heroBg}
+      alt=""
+      class="absolute inset-0 h-full w-full object-cover"
+      widths={[800, 1600]}
+    />
+    <div class="absolute inset-0 bg-cream/60"></div>
+    <div class="relative mx-auto max-w-2xl px-6 text-center">
+      <Image
+        src={heroLogo}
+        alt="Beau Monde Salon Suites"
+        class="mx-auto w-full max-w-md"
+        widths={[400, 800]}
+      />
+      <p class="mt-4 text-sm tracking-wide uppercase text-muted">
+        <a
+          href="https://share.google/yXlE68tAXU6lEkBh8"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="transition-colors hover:text-gold"
+        >
+          Holly Springs, NC at The Block on Main
+        </a>
       </p>
-      <h1 class="mt-3 font-heading text-4xl font-bold text-charcoal md:text-5xl">
-        Salon Professionals
-      </h1>
-      <p class="mt-4 text-lg text-muted">
+      <p class="mt-2 text-lg text-muted">
         Meet the talented beauty professionals who call Beau Monde home.
       </p>
     </div>
@@ -58,6 +78,7 @@ const categories = [
           slug={pro.id}
           category={pro.data.category}
           photo={pro.data.photo}
+          suite={pro.data.suite}
         />
       ))}
     </div>

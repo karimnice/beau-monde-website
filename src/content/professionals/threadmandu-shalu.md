@@ -12,5 +12,6 @@ bookingUrl: "https://squareup.com/appointments/book/sjgpuvf5cey9d6/LZFH2G0TBW96J
 instagram: "https://www.instagram.com/threadmandu/"
 facebook: "https://www.facebook.com/Threadmandu/"
 phone: "984-270-4066"
-order: 12
+suite: "Suite 11"
+order: 13
 ---

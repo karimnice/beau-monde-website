@@ -48,20 +48,27 @@ const categoryLabels: Record<string, string> = {
   <section class="mx-auto max-w-4xl px-6 py-16">
     <div class="grid gap-12 md:grid-cols-2">
       {/* Photo */}
-      {data.photo ? (
-        <Image
-          src={data.photo}
-          alt={data.name}
-          class="aspect-square w-full rounded-lg object-cover"
-          widths={[400, 800]}
-        />
-      ) : (
-        <div class="flex aspect-square items-center justify-center rounded-lg bg-gradient-to-br from-cream to-gray-100">
-          <span class="font-heading text-6xl font-bold text-gold/20">
-            {data.name.charAt(0)}
+      <div class="relative">
+        {data.photo ? (
+          <Image
+            src={data.photo}
+            alt={data.name}
+            class="aspect-square w-full rounded-lg object-cover"
+            widths={[400, 800]}
+          />
+        ) : (
+          <div class="flex aspect-square items-center justify-center rounded-lg bg-gradient-to-br from-cream to-gray-100">
+            <span class="font-heading text-6xl font-bold text-gold/20">
+              {data.name.charAt(0)}
+            </span>
+          </div>
+        )}
+        {data.suite && (
+          <span class="absolute top-4 left-4 rounded-sm bg-charcoal/80 px-3 py-1.5 text-sm font-semibold text-white backdrop-blur-sm">
+            {data.suite}
           </span>
-        </div>
-      )}
+        )}
+      </div>
 
       {/* Info */}
       <div>
@@ -96,6 +103,9 @@ const categoryLabels: Record<string, string> = {
           )}
           {data.phone && (
             <Button href={`tel:${data.phone}`} variant="outline">Call</Button>
+          )}
+          {data.email && (
+            <Button href={`mailto:${data.email}`} variant="outline">Email</Button>
           )}
           {data.instagram && (
             <a

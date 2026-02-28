@@ -15,6 +15,8 @@ const professionals = defineCollection({
       instagram: z.string().optional(),
       facebook: z.string().optional(),
       phone: z.string().optional(),
+      email: z.string().optional(),
+      suite: z.string().optional(),
       order: z.number().default(99),
     }),
 });
