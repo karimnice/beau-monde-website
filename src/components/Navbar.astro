@@ -1,7 +1,4 @@
 ---
-import { Image } from "astro:assets";
-import logo from "../assets/logo/logo-full-color.png";
-
 const currentPath = Astro.url.pathname;
 
 const links = [
@@ -12,8 +9,8 @@ const links = [
 
 <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
   <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-    <a href="/">
-      <Image src={logo} alt="Beau Monde Salon Suites" width={150} height={100} class="h-10 w-auto" />
+    <a href="/" class="font-heading text-lg font-bold tracking-wide text-charcoal">
+      Beau Monde
     </a>
 
     {/* Desktop nav */}

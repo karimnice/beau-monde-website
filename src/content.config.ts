@@ -7,7 +7,12 @@ const professionals = defineCollection({
     z.object({
       name: z.string(),
       title: z.string(),
-      category: z.enum(["hair", "nails", "skincare", "brows-lashes"]),
+      category: z
+        .union([
+          z.enum(["hair", "nails", "skincare", "brows-lashes"]),
+          z.array(z.enum(["hair", "nails", "skincare", "brows-lashes"])),
+        ])
+        .transform((val) => (Array.isArray(val) ? val : [val])),
       bio: z.string(),
       photo: image().optional(),
       services: z.array(z.string()).optional(),

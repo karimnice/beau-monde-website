@@ -1,7 +1,9 @@
 ---
 name: "Shalu ~ Threadmandu"
 title: "Brow & Lash Specialist"
-category: "brows-lashes skincare"
+category:
+  - "brows-lashes"
+  - "skincare"
 photo: "../../assets/professionals/threadmandu-shalu.jpg"
 bio: "Shalu of Threadmandu is an expert brow and lash specialist at Beau Monde Salon Suites, offering precise threading, brow shaping, and lash services."
 services:

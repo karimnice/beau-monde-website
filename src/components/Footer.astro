@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+import safeSpace from "../assets/safe-space.png";
 const currentYear = new Date().getFullYear();
 ---
 
@@ -64,8 +66,14 @@ const currentYear = new Date().getFullYear();
       </div>
     </div>
 
-    <div class="mt-12 border-t border-gray-700 pt-8 text-center text-xs text-gray-500">
+    <div class="mt-12 border-t border-gray-700 pt-8 flex items-center justify-between text-xs text-gray-500">
       <p>&copy; {currentYear} Beau Monde Salon Suites. All rights reserved.</p>
+      <Image
+        src={safeSpace}
+        alt="Safe Space"
+        class="h-8 w-auto opacity-70"
+        widths={[60, 120]}
+      />
     </div>
   </div>
 </footer>

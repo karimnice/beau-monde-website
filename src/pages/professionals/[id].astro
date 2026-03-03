@@ -73,7 +73,7 @@ const categoryLabels: Record<string, string> = {
       {/* Info */}
       <div>
         <span class="inline-block rounded-full bg-gold/10 px-3 py-1 text-xs font-medium text-gold">
-          {data.category.split(" ").map((c: string) => categoryLabels[c]).filter(Boolean).join(" & ")}
+          {data.category.map((c: string) => categoryLabels[c]).filter(Boolean).join(" & ")}
         </span>
         <h1 class="mt-4 font-heading text-3xl font-bold text-charcoal md:text-4xl">
           {data.name}

@@ -6,7 +6,7 @@ interface Props {
   name: string;
   title: string;
   slug: string;
-  category: string;
+  category: string[];
   photo?: ImageMetadata;
   suite?: string;
 }
@@ -17,7 +17,7 @@ const { name, title, slug, category, photo, suite } = Astro.props;
 <a
   href={`/professionals/${slug}`}
   class="group block rounded-lg bg-white shadow-sm transition-shadow hover:shadow-md overflow-hidden"
-  data-category={category}
+  data-category={category.join(" ")}
 >
   <div class="relative">
     {photo ? (
