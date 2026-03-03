@@ -8,6 +8,7 @@ services:
   - "Haircuts"
   - "Color"
   - "Lightening & Blonding"
+email: "Refreshedsalon13@gmail.com"
 instagram: "https://www.instagram.com/refreshedsalon/"
 suite: "Suite 13"
 order: 2
