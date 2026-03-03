@@ -8,6 +8,8 @@ services:
   - "Haircuts"
   - "Color"
   - "Styling"
+bookingUrl: "https://www.flourishhairlounge.com/"
+phone: "919-297-8589"
 suite: "Suite 9"
 order: 10
 ---
