@@ -1,5 +1,5 @@
 ---
-businessName: "Refreshed"
+businessName: "Refreshed Salon"
 stylistName: "Courtney Morgan"
 title: "Full Service Hair Stylist"
 category: "hair"

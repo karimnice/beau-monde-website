@@ -10,8 +10,10 @@ services:
   - "Color"
   - "Balayage"
   - "Styling"
+  - "Extensions"
+  - "Toppers"
 bookingUrl: "https://www.vagaro.com/lyssblairehair"
-instagram: "https://www.instagram.com/theblairehaircollective/"
+instagram: "https://www.instagram.com/lyssBlaireHair/"
 phone: "704-437-4934"
 suite: "Suite 3"
 order: 1

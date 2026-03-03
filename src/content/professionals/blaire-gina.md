@@ -8,10 +8,10 @@ bio: "Gina is part of The Blaire Hair Collective, offering full-service hair sty
 services:
   - "Haircuts"
   - "Color"
-  - "Balayage"
+  - "Highlights"
   - "Styling"
 bookingUrl: "https://www.vagaro.com/lyssblairehair"
-instagram: "https://www.instagram.com/theblairehaircollective/"
+instagram: "https://www.instagram.com/lyssBlaireHair/"
 suite: "Suite 3"
 order: 2
 ---
