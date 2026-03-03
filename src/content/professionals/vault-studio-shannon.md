@@ -1,6 +1,6 @@
 ---
 name: "Vault Studio ~ Shannon"
-title: "Hair Stylist"
+title: "Full Service Hair Stylist"
 category: "hair"
 photo: "../../assets/professionals/vault-studio-shannon.jpg"
 bio: "Shannon of Vault Studio Holly Springs is dedicated to creating personalized looks with expert color and cutting techniques at Beau Monde."

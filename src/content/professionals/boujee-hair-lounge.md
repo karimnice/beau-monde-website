@@ -1,6 +1,6 @@
 ---
 name: "The Boujee Hair Lounge"
-title: "Hair Stylist"
+title: "Full Service Hair Stylist"
 category: "hair"
 photo: "../../assets/professionals/boujee-erica.jpg"
 bio: "The Boujee Hair Lounge offers luxury hair services including custom coloring, extensions, makeup applications, and editorial work at Beau Monde."

@@ -1,6 +1,6 @@
 ---
 name: "Vault Studio ~ Mindy"
-title: "Hair Stylist"
+title: "Full Service Hair Stylist"
 category: "hair"
 photo: "../../assets/professionals/vault-studio-mindy.jpg"
 bio: "Mindy of Vault Studio Holly Springs brings passion and expertise to every appointment, delivering beautiful results in her suite at Beau Monde."

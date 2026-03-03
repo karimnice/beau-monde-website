@@ -1,6 +1,6 @@
 ---
 name: "Courtney Morgan"
-title: "Hair Stylist"
+title: "Full Service Hair Stylist"
 category: "hair"
 photo: "../../assets/professionals/refreshed-courtney.jpg"
 bio: "Courtney Morgan specializes in lightening and blonding services, offering expert haircuts and color at Beau Monde Salon Suites."

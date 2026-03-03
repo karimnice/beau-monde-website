@@ -1,6 +1,6 @@
 ---
 name: "Daniel & Co. Hair"
-title: "Hair Stylist"
+title: "Full Service Hair Stylist"
 category: "hair"
 photo: "../../assets/professionals/daniel-penn.jpg"
 bio: "Daniel & Co. Hair delivers exceptional hair services with a focus on precision cuts, color, highlights, Keratin treatments, and Brazilian Blowouts at Beau Monde Salon Suites."

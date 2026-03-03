@@ -102,7 +102,7 @@ const categories = [
       btn.classList.add("bg-gold", "text-white");
 
       cards.forEach((card) => {
-        if (filter === "all" || card.dataset.category === filter) {
+        if (filter === "all" || (card.dataset.category && card.dataset.category.split(" ").includes(filter))) {
           card.style.display = "";
         } else {
           card.style.display = "none";
