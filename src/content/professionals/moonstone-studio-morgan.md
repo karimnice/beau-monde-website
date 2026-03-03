@@ -1,6 +1,6 @@
 ---
 businessName: "Moonstone Studio"
-stylistName: "Morgan "
+stylistName: "Morgan Forsyth"
 title: "Full Service Hair Stylist"
 category: "hair"
 photo: "../../assets/professionals/moonstone-morgan.jpg"
