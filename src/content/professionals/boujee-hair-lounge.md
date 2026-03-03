@@ -14,5 +14,5 @@ instagram: "https://www.instagram.com/theboujeehairartist"
 facebook: "https://www.facebook.com/theboujeehairartist"
 phone: "919-518-6744"
 suite: "Suite 8"
-order: 9
+order: 15
 ---

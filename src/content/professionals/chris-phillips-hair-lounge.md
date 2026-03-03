@@ -11,5 +11,5 @@ services:
 bookingUrl: "https://christinaphillips.glossgenius.com/"
 instagram: "https://www.instagram.com/chrisphillipshairlounge/"
 suite: "Suite 4A"
-order: 4
+order: 1
 ---

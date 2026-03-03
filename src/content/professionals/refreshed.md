@@ -10,5 +10,5 @@ services:
   - "Lightening & Blonding"
 instagram: "https://www.instagram.com/refreshedsalon/"
 suite: "Suite 13"
-order: 15
+order: 2
 ---

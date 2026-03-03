@@ -11,5 +11,5 @@ services:
 instagram: "https://www.instagram.com/krystal__beeler/"
 phone: "919-628-6114"
 suite: "Suite 5"
-order: 6
+order: 7
 ---

@@ -11,5 +11,5 @@ services:
 bookingUrl: "https://shannonwomack.glossgenius.com"
 phone: "919-818-7553"
 suite: "Suite 10"
-order: 12
+order: 17
 ---

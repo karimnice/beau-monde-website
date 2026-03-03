@@ -16,5 +16,5 @@ instagram: "https://www.instagram.com/mmoonstone.studio/"
 phone: "919-972-1089"
 email: "moonstonestudio919@gmail.com"
 suite: "Suite 4B"
-order: 5
+order: 8
 ---

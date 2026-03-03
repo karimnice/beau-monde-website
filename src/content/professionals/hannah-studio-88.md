@@ -12,5 +12,5 @@ bookingUrl: "https://studio88hs.square.site/"
 instagram: "https://www.instagram.com/studio88hs"
 facebook: "https://www.facebook.com/studio88hs"
 suite: "Suite 6"
-order: 7
+order: 6
 ---

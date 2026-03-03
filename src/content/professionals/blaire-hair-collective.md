@@ -13,5 +13,5 @@ bookingUrl: "https://www.vagaro.com/lyssblairehair"
 instagram: "https://www.instagram.com/theblairehaircollective/"
 phone: "704-437-4934"
 suite: "Suite 3"
-order: 3
+order: 14
 ---

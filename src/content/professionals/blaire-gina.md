@@ -12,5 +12,5 @@ services:
 bookingUrl: "https://www.vagaro.com/lyssblairehair"
 instagram: "https://www.instagram.com/theblairehaircollective/"
 suite: "Suite 3"
-order: 4
+order: 5
 ---

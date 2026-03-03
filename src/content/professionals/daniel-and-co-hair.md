@@ -13,5 +13,5 @@ services:
 instagram: "https://www.instagram.com/daniel.penn.33"
 phone: "480-540-7051"
 suite: "Suite 2"
-order: 2
+order: 3
 ---
