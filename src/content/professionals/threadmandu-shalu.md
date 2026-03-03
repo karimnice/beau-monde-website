@@ -1,5 +1,6 @@
 ---
-name: "Shalu ~ Threadmandu"
+businessName: "Threadmandu"
+stylistName: "Shalu Gautam"
 title: "Brow & Lash Specialist"
 category:
   - "brows-lashes"
@@ -16,5 +17,5 @@ instagram: "https://www.instagram.com/threadmandu/"
 facebook: "https://www.facebook.com/Threadmandu/"
 phone: "984-270-4066"
 suite: "Suite 11"
-order: 12
+order: 15
 ---

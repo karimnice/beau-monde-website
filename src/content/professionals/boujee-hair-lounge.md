@@ -1,5 +1,6 @@
 ---
-name: "The Boujee Hair Lounge"
+businessName: "The Boujee Hair Lounge"
+stylistName: "Erica Hester"
 title: "Full Service Hair Stylist"
 category: "hair"
 photo: "../../assets/professionals/boujee-erica.jpg"
@@ -14,5 +15,5 @@ instagram: "https://www.instagram.com/theboujeehairartist"
 facebook: "https://www.facebook.com/theboujeehairartist"
 phone: "919-518-6744"
 suite: "Suite 8"
-order: 15
+order: 4
 ---

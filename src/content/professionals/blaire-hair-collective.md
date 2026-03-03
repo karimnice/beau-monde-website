@@ -1,5 +1,6 @@
 ---
-name: "The Blaire Hair Collective"
+businessName: "The Blaire Hair Collective"
+stylistName: "Alyssa Blaire"
 title: "Full Service Hair Stylist"
 category: "hair"
 photo: "../../assets/professionals/blaire-alyssa.jpg"
@@ -13,5 +14,5 @@ bookingUrl: "https://www.vagaro.com/lyssblairehair"
 instagram: "https://www.instagram.com/theblairehaircollective/"
 phone: "704-437-4934"
 suite: "Suite 3"
-order: 14
+order: 1
 ---

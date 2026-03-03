@@ -1,5 +1,6 @@
 ---
-name: "Nicolette Williams ~ Jersey Lashes"
+businessName: "Jersey Lashes"
+stylistName: "Nicolette Williams"
 title: "Brow & Lash Specialist"
 category: "brows-lashes"
 photo: "../../assets/professionals/jersey-lashes-nicolette.jpg"
@@ -12,5 +13,5 @@ bookingUrl: "https://www.jerseylashesnc.com/"
 instagram: "https://www.instagram.com/jerseylashes.nc/"
 phone: "732-998-7604"
 suite: "Suite 12"
-order: 10
+order: 8
 ---

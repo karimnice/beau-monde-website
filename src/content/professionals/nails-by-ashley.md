@@ -1,5 +1,6 @@
 ---
-name: "Nails by Ashley"
+businessName: "Nails by Ashley"
+stylistName: "Ashley Dang"
 title: "Nail Artist"
 category: "nails"
 photo: "../../assets/professionals/nails-ashley.png"
@@ -11,5 +12,5 @@ services:
 bookingUrl: "https://nails-by-ashley-105135.square.site/"
 instagram: "https://www.instagram.com/nailsby.ashleydang"
 suite: "Suite 7"
-order: 9
+order: 11
 ---

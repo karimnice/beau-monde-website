@@ -19,7 +19,10 @@ const categories = [
 ];
 ---
 
-<Layout>
+<Layout
+  title="Beau Monde Salon Suites | Holly Springs, NC"
+  description="Meet the talented hair stylists, nail artists, skincare specialists, and beauty professionals at Beau Monde Salon Suites in Holly Springs, NC."
+>
   <section class="relative overflow-hidden bg-cream py-6 md:py-9">
     <Image
       src={heroBg}
@@ -74,7 +77,8 @@ const categories = [
     <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3" id="professionals-grid">
       {professionals.map((pro) => (
         <ProfessionalCard
-          name={pro.data.name}
+          businessName={pro.data.businessName}
+          stylistName={pro.data.stylistName}
           title={pro.data.title}
           slug={pro.id}
           category={pro.data.category}

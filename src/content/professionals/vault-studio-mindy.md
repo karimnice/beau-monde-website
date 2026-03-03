@@ -1,5 +1,6 @@
 ---
-name: "Vault Studio ~ Mindy"
+businessName: "Vault Studio"
+stylistName: "Mindy Bunt"
 title: "Full Service Hair Stylist"
 category: "hair"
 photo: "../../assets/professionals/vault-studio-mindy.jpg"

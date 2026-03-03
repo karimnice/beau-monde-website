@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://beaumondesalonsuites.com/sitemap-index.xml

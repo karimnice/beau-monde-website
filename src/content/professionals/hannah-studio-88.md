@@ -1,5 +1,6 @@
 ---
-name: "Hannah ~ Studio 88"
+businessName: "Studio 88"
+stylistName: "Hannah Ho"
 title: "Nail Artist"
 category: "nails"
 photo: "../../assets/professionals/hannah-studio-88.jpg"
@@ -12,5 +13,5 @@ bookingUrl: "https://studio88hs.square.site/"
 instagram: "https://www.instagram.com/studio88hs"
 facebook: "https://www.facebook.com/studio88hs"
 suite: "Suite 6"
-order: 6
+order: 14
 ---

@@ -11,8 +11,8 @@ export async function getStaticPaths() {
     params: { id: pro.id },
     props: {
       professional: pro,
-      prev: i > 0 ? { id: sorted[i - 1].id, name: sorted[i - 1].data.name } : null,
-      next: i < sorted.length - 1 ? { id: sorted[i + 1].id, name: sorted[i + 1].data.name } : null,
+      prev: i > 0 ? { id: sorted[i - 1].id, displayName: `${sorted[i - 1].data.businessName} - ${sorted[i - 1].data.stylistName}` } : null,
+      next: i < sorted.length - 1 ? { id: sorted[i + 1].id, displayName: `${sorted[i + 1].data.businessName} - ${sorted[i + 1].data.stylistName}` } : null,
     },
   }));
 }
@@ -20,6 +20,7 @@ export async function getStaticPaths() {
 const { professional, prev, next } = Astro.props;
 const { data } = professional;
 const { Content } = await render(professional);
+const displayName = `${data.businessName} - ${data.stylistName}`;
 
 const categoryLabels: Record<string, string> = {
   hair: "Hair",
@@ -30,7 +31,10 @@ const categoryLabels: Record<string, string> = {
 
 ---
 
-<Layout title={`${data.name} | Beau Monde Salon Suites`}>
+<Layout
+  title={`${displayName} | Beau Monde Salon Suites`}
+  description={`${displayName} — ${data.title} at Beau Monde Salon Suites in Holly Springs, NC. ${data.bio.slice(0, 120)}${data.bio.length > 120 ? '...' : ''}`}
+>
   <section class="bg-cream py-16">
     <div class="mx-auto max-w-4xl px-6">
       <a
@@ -52,14 +56,14 @@ const categoryLabels: Record<string, string> = {
         {data.photo ? (
           <Image
             src={data.photo}
-            alt={data.name}
+            alt={displayName}
             class="aspect-square w-full rounded-lg object-cover"
             widths={[400, 800]}
           />
         ) : (
           <div class="flex aspect-square items-center justify-center rounded-lg bg-gradient-to-br from-cream to-gray-100">
             <span class="font-heading text-6xl font-bold text-gold/20">
-              {data.name.charAt(0)}
+              {data.businessName.charAt(0)}
             </span>
           </div>
         )}
@@ -76,7 +80,7 @@ const categoryLabels: Record<string, string> = {
           {data.category.map((c: string) => categoryLabels[c]).filter(Boolean).join(" & ")}
         </span>
         <h1 class="mt-4 font-heading text-3xl font-bold text-charcoal md:text-4xl">
-          {data.name}
+          {displayName}
         </h1>
         <p class="mt-1 text-lg text-muted">{data.title}</p>
         <p class="mt-6 leading-relaxed text-muted">{data.bio}</p>
@@ -155,7 +159,7 @@ const categoryLabels: Record<string, string> = {
             <svg class="h-4 w-4 shrink-0 transition-transform group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
             </svg>
-            <span class="text-sm font-medium">{prev.name}</span>
+            <span class="text-sm font-medium">{prev.displayName}</span>
           </a>
         ) : <div class="flex-1" />}
         {next ? (
@@ -163,7 +167,7 @@ const categoryLabels: Record<string, string> = {
             href={`/professionals/${next.id}`}
             class="group flex flex-1 items-center justify-end gap-2 px-6 py-6 text-muted transition-colors hover:text-gold"
           >
-            <span class="text-sm font-medium">{next.name}</span>
+            <span class="text-sm font-medium">{next.displayName}</span>
             <svg class="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>

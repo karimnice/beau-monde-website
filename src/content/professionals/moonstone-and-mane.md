@@ -1,5 +1,6 @@
 ---
-name: "Randi ~ Moonstone and Mane"
+businessName: "Moonstone and Mane"
+stylistName: "Randi Durham"
 title: "Full Service Hair Stylist"
 category: "hair"
 photo: "../../assets/professionals/moonstone-randi.jpg"
@@ -14,5 +15,5 @@ instagram: "https://www.instagram.com/moonstoneandmane/"
 facebook: "https://www.facebook.com/profile.php?id=61577220361320"
 phone: "931-561-7190"
 suite: "Suite 1B"
-order: 11
+order: 9
 ---

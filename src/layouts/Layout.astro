@@ -12,12 +12,17 @@ import Footer from "../components/Footer.astro";
 interface Props {
   title?: string;
   description?: string;
+  ogImage?: string;
 }
 
 const {
   title = "Beau Monde Salon Suites | Holly Springs, NC",
   description = "Beau Monde Salon Suites is a locally-owned, luxury salon with the area's top beauty professionals in Holly Springs, North Carolina.",
+  ogImage = "/og-default.jpg",
 } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImageURL = new URL(ogImage, Astro.site);
 ---
 
 <!doctype html>
@@ -26,9 +31,54 @@ const {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.ico" />
+    <link rel="canonical" href={canonicalURL} />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageURL} />
+    <meta property="og:site_name" content="Beau Monde Salon Suites" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageURL} />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BeautySalon",
+      "name": "Beau Monde Salon Suites",
+      "description": "Locally-owned luxury salon suites featuring the area's top beauty professionals in Holly Springs, North Carolina.",
+      "url": "https://beaumondesalonsuites.com",
+      "telephone": "+1-919-551-8406",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "300 S Main St",
+        "addressLocality": "Holly Springs",
+        "addressRegion": "NC",
+        "postalCode": "27540",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.6513,
+        "longitude": -78.8336
+      },
+      "image": "https://beaumondesalonsuites.com/og-default.jpg",
+      "sameAs": [
+        "https://www.instagram.com/beaumondesalonsuites/",
+        "https://www.facebook.com/beaumondesalonsuites"
+      ],
+      "priceRange": "$$"
+    })} />
   </head>
   <body class="font-sans text-charcoal bg-white antialiased">
     <Navbar />

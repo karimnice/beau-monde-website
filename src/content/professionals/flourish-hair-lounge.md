@@ -1,5 +1,6 @@
 ---
-name: "Flourish Hair Lounge"
+businessName: "Flourish Hair Lounge"
+stylistName: "Meredith White"
 title: "Full Service Hair Stylist"
 category: "hair"
 photo: "../../assets/professionals/flourish-meredith.jpg"
@@ -11,5 +12,5 @@ services:
 bookingUrl: "https://www.flourishhairlounge.com/"
 phone: "919-297-8589"
 suite: "Suite 9"
-order: 4
+order: 7
 ---

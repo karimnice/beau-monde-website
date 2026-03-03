@@ -5,7 +5,8 @@ const professionals = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/professionals" }),
   schema: ({ image }) =>
     z.object({
-      name: z.string(),
+      businessName: z.string(),
+      stylistName: z.string(),
       title: z.string(),
       category: z
         .union([

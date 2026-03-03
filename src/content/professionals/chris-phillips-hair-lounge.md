@@ -1,5 +1,6 @@
 ---
-name: "Chris Phillips Hair Lounge"
+businessName: "Chris Phillips Hair Lounge"
+stylistName: "Chris Phillips"
 title: "Full Service Hair Stylist"
 category: "hair"
 photo: "../../assets/professionals/chris-phillips.jpg"
@@ -11,5 +12,5 @@ services:
 bookingUrl: "https://christinaphillips.glossgenius.com/"
 instagram: "https://www.instagram.com/chrisphillipshairlounge/"
 suite: "Suite 4A"
-order: 1
+order: 5
 ---

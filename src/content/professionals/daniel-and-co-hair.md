@@ -1,5 +1,6 @@
 ---
-name: "Daniel & Co. Hair"
+businessName: "Daniel & Co. Hair"
+stylistName: "Daniel Penn"
 title: "Full Service Hair Stylist"
 category: "hair"
 photo: "../../assets/professionals/daniel-penn.jpg"
@@ -13,5 +14,5 @@ services:
 instagram: "https://www.instagram.com/daniel.penn.33"
 phone: "480-540-7051"
 suite: "Suite 2"
-order: 3
+order: 6
 ---

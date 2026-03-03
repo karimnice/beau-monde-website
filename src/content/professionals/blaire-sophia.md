@@ -1,5 +1,6 @@
 ---
-name: "Sophia Brown"
+businessName: "The Blaire Hair Collective"
+stylistName: "Sophia Brown"
 title: "Full Service Hair Stylist"
 category: "hair"
 photo: "../../assets/professionals/blaire-sophia.jpg"
@@ -12,5 +13,5 @@ services:
 bookingUrl: "https://www.vagaro.com/lyssblairehair"
 instagram: "https://www.instagram.com/theblairehaircollective/"
 suite: "Suite 3"
-order: 13
+order: 3
 ---

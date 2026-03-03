@@ -1,5 +1,6 @@
 ---
-name: "Krystal Beeler ~ Smoke and Mirrors"
+businessName: "Smoke and Mirrors"
+stylistName: "Krystal Beeler"
 title: "Full Service Hair Stylist"
 category: "hair"
 photo: "../../assets/professionals/krystal-beeler.jpg"
@@ -11,5 +12,5 @@ services:
 instagram: "https://www.instagram.com/krystal__beeler/"
 phone: "919-628-6114"
 suite: "Suite 5"
-order: 7
+order: 13
 ---

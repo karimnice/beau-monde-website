@@ -1,5 +1,6 @@
 ---
-name: "Gina Grube"
+businessName: "The Blaire Hair Collective"
+stylistName: "Gina Grube"
 title: "Full Service Hair Stylist"
 category: "hair"
 photo: "../../assets/professionals/blaire-gina.jpg"
@@ -12,5 +13,5 @@ services:
 bookingUrl: "https://www.vagaro.com/lyssblairehair"
 instagram: "https://www.instagram.com/theblairehaircollective/"
 suite: "Suite 3"
-order: 5
+order: 2
 ---

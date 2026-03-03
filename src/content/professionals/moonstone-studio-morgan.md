@@ -1,5 +1,6 @@
 ---
-name: "Morgan ~ Moonstone Studio"
+businessName: "Moonstone Studio"
+stylistName: "Morgan "
 title: "Full Service Hair Stylist"
 category: "hair"
 photo: "../../assets/professionals/moonstone-morgan.jpg"
@@ -16,5 +17,5 @@ instagram: "https://www.instagram.com/mmoonstone.studio/"
 phone: "919-972-1089"
 email: "moonstonestudio919@gmail.com"
 suite: "Suite 4B"
-order: 8
+order: 10
 ---
