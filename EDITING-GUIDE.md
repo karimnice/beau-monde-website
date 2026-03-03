@@ -5,7 +5,7 @@
 - **Framework:** Astro 5 with static site generation
 - **Styling:** Tailwind CSS v4
 - **Deployment:** GitHub Pages via GitHub Actions (auto-deploys on push to `main`)
-- **Domain:** new.beaumondesalonsuites.com
+- **Domain:** beaumondesalonsuites.com
 
 ## Project Structure
 
