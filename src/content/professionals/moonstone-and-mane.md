@@ -3,7 +3,7 @@ name: "Randi ~ Moonstone and Mane"
 title: "Full Service Hair Stylist"
 category: "hair"
 photo: "../../assets/professionals/moonstone-randi.jpg"
-bio: "Randi of Moonstone and Mane creates stunning hair transformations in her beautifully curated suite at Beau Monde Salon Suites in Holly Springs."
+bio: "Randi of Moonstone and Mane creates stunning hair transformations in her beautiful suite at Beau Monde Salon Suites in Holly Springs."
 services:
   - "Haircuts"
   - "Color"
