@@ -67,7 +67,11 @@ const currentYear = new Date().getFullYear();
     </div>
 
     <div class="mt-12 border-t border-gray-700 pt-8 flex items-center justify-between text-xs text-gray-500">
-      <p>&copy; {currentYear} Beau Monde Salon Suites. All rights reserved.</p>
+      <p>
+        &copy; {currentYear} Beau Monde Salon Suites. All rights reserved.
+        <span class="mx-1">&middot;</span>
+        <a href="/privacy" class="transition-colors hover:text-gold">Privacy Policy</a>
+      </p>
       <Image
         src={safeSpace}
         alt="Safe Space"

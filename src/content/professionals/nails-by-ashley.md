@@ -9,6 +9,7 @@ services:
   - "Nail Enhancements"
   - "Custom Nail Design"
   - "Manicures"
+  - "Pedicures"
 bookingUrl: "https://nails-by-ashley-105135.square.site/"
 instagram: "https://www.instagram.com/nailsby.ashleydang"
 suite: "Suite 7"

@@ -83,7 +83,7 @@ const categoryLabels: Record<string, string> = {
           {displayName}
         </h1>
         <p class="mt-1 text-lg text-muted">{data.title}</p>
-        <p class="mt-6 leading-relaxed text-muted">{data.bio}</p>
+        <p class="mt-6 leading-relaxed text-muted" set:html={data.bio} />
 
         {data.services && data.services.length > 0 && (
           <div class="mt-8">
