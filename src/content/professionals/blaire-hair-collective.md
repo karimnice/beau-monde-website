@@ -4,7 +4,7 @@ stylistName: "Alyssa Blaire"
 title: "Full Service Hair Stylist"
 category: "hair"
 photo: "../../assets/professionals/blaire-alyssa.jpg"
-bio: "The Blaire Hair Collective at Beau Monde Salon Suites offers full-service hair styling, from precision cuts to stunning color transformations."
+bio: "A team of stylists creating luxury hair with personality — from seamless extensions and custom color to transformations that make you feel like <em>that girl</em>."
 services:
   - "Haircuts"
   - "Color"
