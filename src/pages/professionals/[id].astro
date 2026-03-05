@@ -83,7 +83,11 @@ const categoryLabels: Record<string, string> = {
           {displayName}
         </h1>
         <p class="mt-1 text-lg text-muted">{data.title}</p>
-        <p class="mt-6 leading-relaxed text-muted" set:html={data.bio} />
+        <div class="mt-6 space-y-4 leading-relaxed text-muted">
+          {data.bio.split(/\n\n+/).map((paragraph: string) => (
+            <p>{paragraph.trim()}</p>
+          ))}
+        </div>
 
         {data.services && data.services.length > 0 && (
           <div class="mt-8">
@@ -106,7 +110,7 @@ const categoryLabels: Record<string, string> = {
             <Button href={data.bookingUrl} target="_blank" rel="noopener noreferrer">Book Now</Button>
           )}
           {data.phone && (
-            <Button href={`tel:${data.phone}`} variant="outline">Call</Button>
+            <Button href={`sms:${data.phone}`} variant="outline">Text</Button>
           )}
           {data.email && (
             <Button href={`mailto:${data.email}`} variant="outline">Email</Button>

@@ -4,14 +4,15 @@ stylistName: "Morgan Forsyth"
 title: "Full Service Hair Stylist"
 category: "hair"
 photo: "../../assets/professionals/moonstone-morgan.jpg"
-bio: "Morgan of Moonstone Studio brings a personalized approach to every client who sits in her chair. Whether it's a fresh cut for the whole family, a customized color transformation, or sleek keratin smoothing, Morgan is dedicated to helping you look and feel your best. With a passion for staying current on the latest techniques and a warm, welcoming energy, she creates a salon experience that keeps clients coming back."
+bio: |
+  Morgan has spent the last 16 years perfecting the art of great hair — from vibrant color and soft, lived-in blends to precision cuts and premium extensions. She's laid-back by nature, but don't let that fool you: she's serious about making sure you leave her chair feeling your absolute best.
+
+  Now accepting new clients — she'd love to have you in her chair and part of the good-hair gang.
 services:
-  - "Women's Haircuts"
-  - "Men's Haircuts"
-  - "Children's Haircuts"
-  - "Customized Hair Color"
-  - "Keratin Treatments"
-  - "Extensions"
+  - "Haircuts for All"
+  - "Tailored Hair Color"
+  - "Extension Services"
+  - "Keratin Smoothing Treatments"
 bookingUrl: "https://moonstonestudio919.glossgenius.com/"
 instagram: "https://www.instagram.com/mmoonstone.studio/"
 phone: "919-972-1089"

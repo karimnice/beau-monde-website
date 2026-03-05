@@ -98,12 +98,15 @@ const highlights = [
           We offer exceptional professionals the opportunity to own and operate their own business in a beautiful environment without worrying about facility upkeep. Set your own hours, set your own rates, sell the products of your choice, and keep 100% of your profits.
         </p>
       </div>
-      <Image
-        src={suiteFurnished}
-        alt="Furnished salon suite"
-        class="rounded-lg"
-        widths={[400, 800]}
-      />
+      <div class="relative">
+        <Image
+          src={suiteFurnished}
+          alt="Furnished salon suite"
+          class="rounded-lg"
+          widths={[400, 800]}
+        />
+        <span class="absolute bottom-2 right-2 rounded bg-black/50 px-2 py-0.5 text-xs text-white/80">Photo courtesy of The Bowerbird Agency</span>
+      </div>
     </div>
   </section>
 
@@ -121,24 +124,33 @@ const highlights = [
 
       <div class="mt-12 grid gap-12 md:grid-cols-2">
         <div class="grid grid-cols-2 gap-3">
-          <Image
-            src={suitePrivate}
-            alt="Private salon suite"
-            class="col-span-2 rounded-lg"
-            widths={[400, 800]}
-          />
-          <Image
-            src={shampoolBowl}
-            alt="Shampoo bowl station"
-            class="rounded-lg"
-            widths={[400]}
-          />
-          <Image
-            src={salon1}
-            alt="Salon interior"
-            class="rounded-lg"
-            widths={[400]}
-          />
+          <div class="relative col-span-2">
+            <Image
+              src={suitePrivate}
+              alt="Private salon suite"
+              class="rounded-lg"
+              widths={[400, 800]}
+            />
+            <span class="absolute bottom-2 right-2 rounded bg-black/50 px-2 py-0.5 text-xs text-white/80">Photo courtesy of The Bowerbird Agency</span>
+          </div>
+          <div class="relative">
+            <Image
+              src={shampoolBowl}
+              alt="Shampoo bowl station"
+              class="rounded-lg"
+              widths={[400]}
+            />
+            <span class="absolute bottom-2 right-2 rounded bg-black/50 px-2 py-0.5 text-xs text-white/80">Photo courtesy of The Bowerbird Agency</span>
+          </div>
+          <div class="relative">
+            <Image
+              src={salon1}
+              alt="Salon interior"
+              class="rounded-lg"
+              widths={[400]}
+            />
+            <span class="absolute bottom-2 right-2 rounded bg-black/50 px-2 py-0.5 text-xs text-white/80">Photo courtesy of The Bowerbird Agency</span>
+          </div>
         </div>
 
         <ul class="grid content-center gap-3">
