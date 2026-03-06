@@ -1,11 +1,11 @@
 ---
 businessName: "Studio 88"
-stylistName: "Hannah Ho"
+stylistName: "Hanna Ho"
 title: "Nail Artist"
 category:
   - "nails"
   - "skincare"
-photo: "../../assets/professionals/hannah-studio-88.jpg"
+photo: "../../assets/professionals/hanna-studio-88.jpg"
 bio: "Hanna specializes in nail services, rejuvenating facials, and relaxing head spa treatments. She’s passionate about helping every client unwind, refresh, and leave feeling their absolute best."
 services:
   - "Manicures"
