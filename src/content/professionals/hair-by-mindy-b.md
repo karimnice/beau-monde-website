@@ -1,5 +1,5 @@
 ---
-businessName: "Vault Studio Mindy"
+businessName: "Hair by Mindy B"
 stylistName: "Mindy Bunt"
 title: "Full Service Hair Stylist"
 category: "hair"
