@@ -1,0 +1,114 @@
+---
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/montserrat/600.css";
+import "@fontsource/montserrat/700.css";
+import "../styles/global.css";
+import { Image } from "astro:assets";
+import fs from "node:fs";
+import path from "node:path";
+import logo from "../assets/logo/logo-white.png";
+import floorplan from "../assets/salon/floorplan-dark.png";
+import qrCode from "../assets/salon/qr-dark.png";
+
+const dir = path.resolve("src/content/professionals");
+const field = (src: string, key: string) =>
+  src.match(new RegExp(`^${key}:\\s*"?([^"\\n]+?)"?\\s*$`, "m"))?.[1];
+
+const entries = fs
+  .readdirSync(dir)
+  .filter((f) => f.endsWith(".md"))
+  .map((f) => {
+    const src = fs.readFileSync(path.join(dir, f), "utf8");
+    return {
+      businessName: field(src, "businessName") ?? "",
+      suite: field(src, "suite") ?? "",
+      order: parseInt(field(src, "order") ?? "99", 10),
+    };
+  })
+  .sort((a, b) => a.order - b.order);
+
+const seen = new Set<string>();
+const suites: { suite: string; name: string }[] = [];
+for (const p of entries) {
+  if (!p.suite || seen.has(p.suite)) continue;
+  seen.add(p.suite);
+  suites.push({ suite: p.suite, name: p.businessName });
+}
+
+if (!seen.has("Suite 10")) {
+  suites.push({ suite: "Suite 10", name: "Available" });
+}
+
+const suiteOrder = (s: string) => {
+  const m = s.match(/(\d+)([A-Za-z]*)/);
+  if (!m) return [999, ""] as const;
+  return [parseInt(m[1], 10), m[2]] as const;
+};
+suites.sort((a, b) => {
+  const [an, al] = suiteOrder(a.suite);
+  const [bn, bl] = suiteOrder(b.suite);
+  if (an !== bn) return an - bn;
+  return al.localeCompare(bl);
+});
+
+const mid = Math.ceil(suites.length / 2);
+const col1 = suites.slice(0, mid);
+const col2 = suites.slice(mid);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Beau Monde — Directory</title>
+  </head>
+  <body class="font-sans text-white antialiased" style="background-color:#0f1419;">
+    <main class="mx-auto max-w-[1170px] px-6 py-10">
+      <Image
+        src={logo}
+        alt="Beau Monde Salon Suites"
+        class="mx-auto mb-10 w-full max-w-[780px]"
+        widths={[500, 780, 1200]}
+      />
+
+      <div class="flex flex-wrap justify-between">
+        {[col1, col2].map((col) => (
+          <div class="w-[48%]">
+            {col.map(({ suite, name }) => (
+              <div class="mb-5">
+                <div class="text-[26px] font-semibold leading-tight text-white">{suite}</div>
+                <div class="text-[26px] font-normal leading-tight text-gray-300">{name}</div>
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
+
+      <div class="mt-10 flex items-center justify-between gap-10">
+        <Image
+          src={floorplan}
+          alt="Beau Monde Salon Suites floor plan"
+          class="w-full max-w-[800px] flex-1"
+          widths={[800, 1200, 1600]}
+        />
+        <div class="flex flex-shrink-0 flex-col items-center">
+          <Image
+            src={qrCode}
+            alt="Scan to visit beaumondesalonsuites.com"
+            class="w-[240px]"
+            widths={[240, 480]}
+          />
+          <p class="mt-3 text-center text-sm font-semibold tracking-wide uppercase text-white">
+            Scan to Visit
+          </p>
+          <p class="text-center text-xs text-gray-400">
+            beaumondesalonsuites.com
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

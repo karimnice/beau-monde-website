@@ -1,5 +1,5 @@
 ---
-businessName: "Moonstone and Mane"
+businessName: "Lunar Stone & Mane"
 stylistName: "Randi Durham"
 title: "Full Service Hair Stylist"
 category: "hair"

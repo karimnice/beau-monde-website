@@ -1,5 +1,5 @@
 ---
-businessName: "Vault Studio"
+businessName: "Vault Studio Mindy"
 stylistName: "Mindy Bunt"
 title: "Full Service Hair Stylist"
 category: "hair"
@@ -12,6 +12,6 @@ services:
 bookingUrl: "https://mindybunt.glossgenius.com"
 instagram: "https://www.instagram.com/hairbymindyb/"
 phone: "919-609-2780"
-suite: "Suite 10"
+suite: "Suite 1A"
 order: 16
 ---

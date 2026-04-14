@@ -1,5 +1,5 @@
 ---
-businessName: "Vault Studio"
+businessName: "Vault Studio Shannon"
 stylistName: "Shannon Womack"
 title: "Full Service Hair Stylist"
 category: "hair"
@@ -12,6 +12,6 @@ services:
   - "Styling"
 bookingUrl: "https://shannonwomack.glossgenius.com"
 phone: "919-818-7553"
-suite: "Suite 10"
+suite: "Suite 6"
 order: 17
 ---
