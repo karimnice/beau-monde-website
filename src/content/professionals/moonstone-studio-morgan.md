@@ -17,6 +17,6 @@ bookingUrl: "https://moonstonestudio919.glossgenius.com/"
 instagram: "https://www.instagram.com/mmoonstone.studio/"
 phone: "919-972-1089"
 email: "moonstonestudio919@gmail.com"
-suite: "Suite 4B"
+suite: "Suite 10B"
 order: 10
 ---
