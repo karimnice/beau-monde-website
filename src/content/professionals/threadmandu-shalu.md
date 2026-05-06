@@ -1,5 +1,5 @@
 ---
-businessName: "Threadmandu"
+businessName: "Threadmandu Brow & Beauty Salon"
 stylistName: "Shalu Gautam"
 title: "Brow & Lash Specialist"
 category:
