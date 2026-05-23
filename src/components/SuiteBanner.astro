@@ -1,0 +1,37 @@
+---
+import { Image } from "astro:assets";
+import bannerPhoto from "../assets/salon/suite-4.jpg";
+---
+
+<section class="mx-auto max-w-6xl px-6 pt-6">
+  <a
+    href="/suites"
+    class="group flex items-stretch overflow-hidden rounded-lg bg-charcoal shadow-sm ring-1 ring-charcoal/10 transition-shadow hover:shadow-md"
+  >
+    <div class="relative hidden w-40 shrink-0 sm:block">
+      <Image
+        src={bannerPhoto}
+        alt=""
+        class="absolute inset-0 h-full w-full object-cover opacity-80"
+        widths={[200, 400]}
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-charcoal/30 to-charcoal"></div>
+    </div>
+    <div class="flex flex-1 flex-col items-start gap-1 px-6 py-5 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
+      <div>
+        <p class="font-heading text-xs font-semibold tracking-[0.18em] uppercase text-gold">
+          Now Leasing
+        </p>
+        <p class="mt-1 font-heading text-lg font-semibold text-white">
+          Two double suites open &mdash; with a move-in incentive
+        </p>
+        <p class="mt-0.5 text-sm text-gray-300">
+          Suite 4 available now &middot; Suite 2 coming soon
+        </p>
+      </div>
+      <span class="shrink-0 rounded-sm border border-gold px-4 py-2 text-xs font-semibold tracking-wide uppercase text-gold transition-colors group-hover:bg-gold group-hover:text-white">
+        View Suites &rarr;
+      </span>
+    </div>
+  </a>
+</section>

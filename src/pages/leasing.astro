@@ -2,6 +2,8 @@
 import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button.astro";
+import SuiteBanner from "../components/SuiteBanner.astro";
+import ContactDialog from "../components/ContactDialog.astro";
 
 import exterior from "../assets/salon/exterior.jpg";
 import suitePrivate from "../assets/salon/suite-private.jpg";
@@ -79,10 +81,15 @@ const highlights = [
         Be your own boss in a luxury suite designed for beauty professionals.
       </p>
       <div class="mt-8">
-        <Button href="tel:+19195518406">Schedule a Tour</Button>
+        <Button href="tel:+19195518406" data-tour-trigger="general">Schedule a Tour</Button>
       </div>
     </div>
   </section>
+
+  {/* Availability banner */}
+  <div class="pt-8">
+    <SuiteBanner />
+  </div>
 
   {/* About */}
   <section class="mx-auto max-w-6xl px-6 py-20">
@@ -211,4 +218,6 @@ const highlights = [
       </div>
     </div>
   </section>
+
+  <ContactDialog />
 </Layout>

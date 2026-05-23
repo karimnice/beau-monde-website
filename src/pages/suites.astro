@@ -1,0 +1,265 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+import ContactDialog from "../components/ContactDialog.astro";
+
+import suite4Photo from "../assets/salon/suite-4.jpg";
+import suite2Photo from "../assets/salon/suite-2.jpg";
+import floorplan from "../assets/salon/floorplan.png";
+
+const included = [
+  "Styling chair",
+  "Shampoo bowl with stand-behind chair",
+  "Built-in cabinets with sink & instant hot water",
+  "Storage and tool cabinet with dedicated outlets",
+  "Large mirror & private climate control",
+  "Sliding glass door",
+  "Hi-speed internet & Wi-Fi",
+  "Shared laundry (double washers & dryers)",
+  "24/7 access with state-of-the-art security",
+];
+---
+
+<Layout
+  title="Available Suites | Beau Monde Salon Suites"
+  description="Two double suites now leasing at Beau Monde Salon Suites in Holly Springs, NC. Suite 4 available now and Suite 2 coming soon — with a move-in incentive."
+>
+  {/* Hero */}
+  <section class="bg-cream">
+    <div class="mx-auto max-w-5xl px-6 pt-16 pb-10 text-center">
+      <p class="font-heading text-sm font-semibold tracking-[0.2em] uppercase text-gold">
+        Now Leasing
+      </p>
+      <h1 class="mt-3 font-heading text-4xl font-bold text-charcoal md:text-5xl">
+        Two Double Suites Open
+      </h1>
+      <p class="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-muted">
+        Two of our largest, brightest suites are coming available &mdash; each fully
+        equipped and ready for the next beauty professional to call home.
+      </p>
+    </div>
+  </section>
+
+  {/* Incentives */}
+  <section class="border-y border-gold/20 bg-gradient-to-r from-gold/5 via-gold/10 to-gold/5">
+    <div class="mx-auto grid max-w-5xl gap-6 px-6 py-8 md:grid-cols-2">
+      <div class="flex flex-col items-center gap-3 text-center md:flex-row md:items-center md:text-left">
+        <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gold/15">
+          <svg class="h-6 w-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8V6m0 12v2m9-9a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <div>
+          <p class="font-heading text-xs font-semibold tracking-[0.18em] uppercase text-gold">
+            Move-In Incentive
+          </p>
+          <p class="mt-1 text-lg font-medium text-charcoal">
+            Half-price rent for your first 4 weeks
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center gap-3 text-center md:flex-row md:items-center md:text-left">
+        <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gold/15">
+          <svg class="h-6 w-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 8v4l3 2m6-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <div>
+          <p class="font-heading text-xs font-semibold tracking-[0.18em] uppercase text-gold">
+            Loyalty Perk
+          </p>
+          <p class="mt-1 text-lg font-medium text-charcoal">
+            One free week of rent every anniversary
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Suite cards */}
+  <section class="mx-auto max-w-6xl px-6 py-16">
+    <div class="grid gap-10 md:grid-cols-2">
+      {/* Suite 4 */}
+      <article class="overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-gray-100">
+        <div class="relative">
+          <Image
+            src={suite4Photo}
+            alt="Suite 4 interior"
+            class="aspect-[4/5] w-full object-cover"
+            widths={[600, 900, 1200]}
+          />
+          <span class="absolute top-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold tracking-wider uppercase text-gold shadow-sm">
+            <span class="h-1.5 w-1.5 rounded-full bg-gold"></span>
+            Available Now
+          </span>
+        </div>
+        <div class="p-7">
+          <h2 class="font-heading text-2xl font-bold text-charcoal">
+            Suite 4 &mdash; Double
+          </h2>
+          <p class="mt-1 text-sm text-muted">
+            Corner suite with floor-to-ceiling windows on two walls.
+          </p>
+          <dl class="mt-5 space-y-2 border-t border-gray-100 pt-5 text-sm">
+            <div class="flex justify-between">
+              <dt class="text-muted">Weekly rent</dt>
+              <dd class="font-medium text-charcoal">$682.50</dd>
+            </div>
+            <div class="flex justify-between">
+              <dt class="text-muted">Additional fees</dt>
+              <dd class="font-medium text-charcoal">None</dd>
+            </div>
+            <div class="flex justify-between">
+              <dt class="text-muted">First 4 weeks</dt>
+              <dd class="font-medium text-gold">½ price ($341.25/wk)</dd>
+            </div>
+          </dl>
+          <Button
+            href="tel:+19195518406"
+            class="mt-6 w-full text-center"
+            data-tour-trigger="Suite 4"
+          >
+            Schedule a Tour
+          </Button>
+        </div>
+      </article>
+
+      {/* Suite 2 */}
+      <article class="overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-gray-100">
+        <div class="relative">
+          <Image
+            src={suite2Photo}
+            alt="Suite 2 interior"
+            class="aspect-[4/5] w-full object-cover"
+            widths={[600, 900, 1200]}
+          />
+          <span class="absolute top-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold tracking-wider uppercase text-charcoal shadow-sm">
+            <span class="h-1.5 w-1.5 rounded-full bg-charcoal/60"></span>
+            Coming Soon
+          </span>
+        </div>
+        <div class="p-7">
+          <h2 class="font-heading text-2xl font-bold text-charcoal">
+            Suite 2 &mdash; Double
+          </h2>
+          <p class="mt-1 text-sm text-muted">
+            Bright suite with a wall of windows facing the street.
+          </p>
+          <dl class="mt-5 space-y-2 border-t border-gray-100 pt-5 text-sm">
+            <div class="flex justify-between">
+              <dt class="text-muted">Weekly rent</dt>
+              <dd class="font-medium text-charcoal">$682.50</dd>
+            </div>
+            <div class="flex justify-between">
+              <dt class="text-muted">Additional fees</dt>
+              <dd class="font-medium text-charcoal">None</dd>
+            </div>
+            <div class="flex justify-between">
+              <dt class="text-muted">First 4 weeks</dt>
+              <dd class="font-medium text-gold">½ price ($341.25/wk)</dd>
+            </div>
+          </dl>
+          <Button
+            href="tel:+19195518406"
+            class="mt-6 w-full text-center"
+            data-tour-trigger="Suite 2"
+          >
+            Schedule a Tour
+          </Button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  {/* What's included */}
+  <section class="bg-cream py-16">
+    <div class="mx-auto max-w-5xl px-6">
+      <div class="text-center">
+        <p class="font-heading text-sm font-semibold tracking-[0.2em] uppercase text-gold">
+          Move-In Ready
+        </p>
+        <h2 class="mt-3 font-heading text-3xl font-bold text-charcoal">
+          What's Included
+        </h2>
+        <p class="mx-auto mt-3 max-w-2xl text-muted">
+          Each double suite is fully equipped &mdash; bring your tools and your clients.
+        </p>
+      </div>
+      <ul class="mx-auto mt-10 grid max-w-3xl gap-3 sm:grid-cols-2">
+        {included.map((item) => (
+          <li class="flex items-start gap-3 rounded-lg bg-white px-4 py-3 shadow-sm">
+            <svg class="mt-0.5 h-5 w-5 shrink-0 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="text-sm text-charcoal">{item}</span>
+          </li>
+        ))}
+      </ul>
+      <p class="mt-6 text-center text-sm text-muted">
+        See the <a href="/leasing" class="text-gold underline-offset-2 hover:underline">full amenity list</a> for everything our salon offers.
+      </p>
+    </div>
+  </section>
+
+  {/* Floorplan with highlights */}
+  <section class="mx-auto max-w-5xl px-6 py-16">
+    <div class="text-center">
+      <p class="font-heading text-sm font-semibold tracking-[0.2em] uppercase text-gold">
+        Find Your Spot
+      </p>
+      <h2 class="mt-3 font-heading text-3xl font-bold text-charcoal">
+        Floor Plan
+      </h2>
+    </div>
+
+    <div class="relative mx-auto mt-10 max-w-3xl">
+      <Image
+        src={floorplan}
+        alt="Beau Monde Salon Suites floor plan"
+        class="block w-full"
+        widths={[600, 900, 1200]}
+      />
+      {/* Suite 4 marker */}
+      <div
+        class="pointer-events-none absolute rounded-md ring-[3px] ring-gold animate-pulse"
+        style="left: 9%; top: 6%; width: 27%; height: 24%;"
+      ></div>
+      {/* Suite 2 marker */}
+      <div
+        class="pointer-events-none absolute rounded-md ring-[3px] ring-charcoal/40"
+        style="left: 12%; top: 46%; width: 21%; height: 17%;"
+      ></div>
+    </div>
+
+    <div class="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm">
+      <span class="inline-flex items-center gap-2">
+        <span class="h-3 w-3 rounded-sm ring-2 ring-gold"></span>
+        <span class="text-charcoal">Suite 4 &mdash; Available Now</span>
+      </span>
+      <span class="inline-flex items-center gap-2">
+        <span class="h-3 w-3 rounded-sm ring-2 ring-charcoal/40"></span>
+        <span class="text-charcoal">Suite 2 &mdash; Coming Soon</span>
+      </span>
+    </div>
+  </section>
+
+  {/* CTA */}
+  <section class="bg-charcoal py-20">
+    <div class="mx-auto max-w-3xl px-6 text-center">
+      <h2 class="font-heading text-3xl font-bold text-white">
+        Ready to Tour a Suite?
+      </h2>
+      <p class="mt-4 text-gray-300">
+        Reach out to walk through Suite 4, get on the list for Suite 2, or learn more about joining the Beau Monde collection.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <Button href="tel:+19195518406" data-tour-trigger="general">Schedule a Tour</Button>
+        <Button href="https://docs.google.com/forms/d/e/1FAIpQLSdGoHPJcuLwk28NxJBzKOAICj55v3ckZLcmVRwneVmHbnKreQ/viewform?usp=sharing&ouid=108598597582804258119" variant="outline" target="_blank">Join the Waitlist</Button>
+      </div>
+    </div>
+  </section>
+
+  <ContactDialog />
+</Layout>

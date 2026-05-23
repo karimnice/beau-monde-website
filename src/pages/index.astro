@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import ProfessionalCard from "../components/ProfessionalCard.astro";
+import SuiteBanner from "../components/SuiteBanner.astro";
 import { getCollection } from "astro:content";
 import heroLogo from "../assets/logo/logo-hero.png";
 import heroBg from "../assets/hero/hero-bg.jpg";
@@ -54,6 +55,9 @@ const categories = [
   <p class="mx-auto max-w-6xl px-6 pt-10 pb-2 text-center text-lg text-muted">
     Meet the talented beauty professionals who call Beau Monde home.
   </p>
+
+  {/* Availability banner */}
+  <SuiteBanner />
 
   <section class="mx-auto max-w-6xl px-6 py-10">
     {/* Category filter */}
