@@ -11,6 +11,6 @@ services:
   - "Highlights"
 instagram: "https://www.instagram.com/daniel.penn.33"
 phone: "480-540-7051"
-suite: "Suite 2"
+suite: "Suite 8"
 order: 6
 ---
