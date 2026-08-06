@@ -4,7 +4,6 @@ import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button.astro";
 import ContactDialog from "../components/ContactDialog.astro";
 
-import suite4Photo from "../assets/salon/suite-4.jpg";
 import suite2Photo from "../assets/salon/suite-2.jpg";
 import floorplan from "../assets/salon/floorplan.png";
 
@@ -23,7 +22,7 @@ const included = [
 
 <Layout
   title="Available Suites | Beau Monde Salon Suites"
-  description="Two double suites now leasing at Beau Monde Salon Suites in Holly Springs, NC. Suite 2 and Suite 4 available now — with a move-in incentive."
+  description="A double suite now leasing at Beau Monde Salon Suites in Holly Springs, NC. Suite 2 available now — with a move-in incentive."
 >
   {/* Hero */}
   <section class="bg-cream">
@@ -32,10 +31,10 @@ const included = [
         Now Leasing
       </p>
       <h1 class="mt-3 font-heading text-4xl font-bold text-charcoal md:text-5xl">
-        Two Double Suites Open
+        One Double Suite Open
       </h1>
       <p class="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-muted">
-        Two of our largest, brightest suites are available now &mdash; each fully
+        One of our largest, brightest suites is available now &mdash; fully
         equipped and ready for the next beauty professional to call home.
       </p>
     </div>
@@ -80,52 +79,7 @@ const included = [
 
   {/* Suite cards */}
   <section class="mx-auto max-w-6xl px-6 py-16">
-    <div class="grid gap-10 md:grid-cols-2">
-      {/* Suite 4 */}
-      <article class="overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-gray-100">
-        <div class="relative">
-          <Image
-            src={suite4Photo}
-            alt="Suite 4 interior"
-            class="aspect-[4/5] w-full object-cover"
-            widths={[600, 900, 1200]}
-          />
-          <span class="absolute top-4 left-4 inline-flex items-center gap-2 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold tracking-wider uppercase text-gold shadow-sm">
-            <span class="h-1.5 w-1.5 rounded-full bg-gold"></span>
-            Available Now
-          </span>
-        </div>
-        <div class="p-7">
-          <h2 class="font-heading text-2xl font-bold text-charcoal">
-            Suite 4 &mdash; Double
-          </h2>
-          <p class="mt-1 text-sm text-muted">
-            Corner suite with floor-to-ceiling windows on two walls.
-          </p>
-          <dl class="mt-5 space-y-2 border-t border-gray-100 pt-5 text-sm">
-            <div class="flex justify-between">
-              <dt class="text-muted">Weekly rent</dt>
-              <dd class="font-medium text-charcoal">$682.50</dd>
-            </div>
-            <div class="flex justify-between">
-              <dt class="text-muted">Additional fees</dt>
-              <dd class="font-medium text-charcoal">None</dd>
-            </div>
-            <div class="flex justify-between">
-              <dt class="text-muted">First 4 weeks</dt>
-              <dd class="font-medium text-gold">½ price ($341.25/wk)</dd>
-            </div>
-          </dl>
-          <Button
-            href="tel:+19195518406"
-            class="mt-6 w-full text-center"
-            data-tour-trigger="Suite 4"
-          >
-            Schedule a Tour
-          </Button>
-        </div>
-      </article>
-
+    <div class="mx-auto grid max-w-md gap-10">
       {/* Suite 2 */}
       <article class="overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-gray-100">
         <div class="relative">
@@ -221,11 +175,6 @@ const included = [
         class="block w-full"
         widths={[600, 900, 1200]}
       />
-      {/* Suite 4 marker */}
-      <div
-        class="pointer-events-none absolute rounded-md ring-[3px] ring-gold animate-pulse"
-        style="left: 9%; top: 6%; width: 27%; height: 24%;"
-      ></div>
       {/* Suite 2 marker */}
       <div
         class="pointer-events-none absolute rounded-md ring-[3px] ring-gold animate-pulse"
@@ -234,10 +183,6 @@ const included = [
     </div>
 
     <div class="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm">
-      <span class="inline-flex items-center gap-2">
-        <span class="h-3 w-3 rounded-sm ring-2 ring-gold"></span>
-        <span class="text-charcoal">Suite 4 &mdash; Available Now</span>
-      </span>
       <span class="inline-flex items-center gap-2">
         <span class="h-3 w-3 rounded-sm ring-2 ring-gold"></span>
         <span class="text-charcoal">Suite 2 &mdash; Available Now</span>
@@ -252,7 +197,7 @@ const included = [
         Ready to Tour a Suite?
       </h2>
       <p class="mt-4 text-gray-300">
-        Reach out to walk through Suite 2 or Suite 4, or learn more about joining the Beau Monde family.
+        Reach out to walk through Suite 2, or learn more about joining the Beau Monde family.
       </p>
       <div class="mt-8 flex flex-wrap justify-center gap-4">
         <Button href="tel:+19195518406" data-tour-trigger="general">Schedule a Tour</Button>
