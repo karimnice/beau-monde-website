@@ -13,12 +13,14 @@ interface Props {
   title?: string;
   description?: string;
   ogImage?: string;
+  footerShowPhone?: boolean;
 }
 
 const {
   title = "Beau Monde Salon Suites | Holly Springs, NC",
   description = "Beau Monde Salon Suites is a locally-owned, luxury salon with the area's top beauty professionals in Holly Springs, North Carolina.",
   ogImage = "/og-default.jpg",
+  footerShowPhone = false,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -85,6 +87,6 @@ const ogImageURL = new URL(ogImage, Astro.site);
     <main>
       <slot />
     </main>
-    <Footer />
+    <Footer showPhone={footerShowPhone} />
   </body>
 </html>

@@ -42,6 +42,9 @@ if (!seen.has("Suite 4")) {
 if (!seen.has("Suite 2")) {
   suites.push({ suite: "Suite 2", name: "Available" });
 }
+if (!seen.has("Suite 1B")) {
+  suites.push({ suite: "Suite 1B", name: "Available" });
+}
 
 const suiteOrder = (s: string) => {
   const m = s.match(/(\d+)([A-Za-z]*)/);

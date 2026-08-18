@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import safeSpace from "../assets/safe-space.png";
 const currentYear = new Date().getFullYear();
+const { showPhone = false } = Astro.props;
 ---
 
 <footer class="bg-charcoal text-white">
@@ -26,19 +27,29 @@ const currentYear = new Date().getFullYear();
         <address class="mt-3 space-y-2 text-sm not-italic text-gray-400">
           <p>300 S Main St</p>
           <p>Holly Springs, NC 27540</p>
-          <p class="pt-2">
-            Interested in leasing a suite?
-            <a href="/suites" class="text-gold underline underline-offset-2 hover:text-gold-dark">
-              View available suites
-            </a>
-          </p>
-          <p class="mt-3 text-sm font-medium text-gray-200">
-            Booking a service?
-            <a href="/" class="text-gold underline underline-offset-2 hover:text-gold-dark">
-              Visit your stylist's page
-            </a>
-            to reach them directly.
-          </p>
+          {showPhone ? (
+            <p class="pt-2">
+              <a href="tel:+19195518406" class="transition-colors hover:text-gold">
+                (919) 551-8406
+              </a>
+            </p>
+          ) : (
+            <>
+              <p class="pt-2">
+                Interested in leasing a suite?
+                <a href="/suites" class="text-gold underline underline-offset-2 hover:text-gold-dark">
+                  View available suites
+                </a>
+              </p>
+              <p class="mt-3 text-sm font-medium text-gray-200">
+                Booking a service?
+                <a href="/" class="text-gold underline underline-offset-2 hover:text-gold-dark">
+                  Visit your stylist's page
+                </a>
+                to reach them directly.
+              </p>
+            </>
+          )}
         </address>
       </div>
 
