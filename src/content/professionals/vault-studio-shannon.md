@@ -11,6 +11,7 @@ services:
   - "Color"
   - "Styling"
 bookingUrl: "https://shannonwomack.glossgenius.com"
+instagram: "https://www.instagram.com/shannon_w_stylist"
 phone: "919-818-7553"
 suite: "Suite 6"
 order: 17
