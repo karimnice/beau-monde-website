@@ -4,7 +4,7 @@ stylistName: "Alyssa Blaire"
 title: "Full Service Hair Stylist"
 category: "hair"
 photo: "../../assets/professionals/blaire-alyssa.jpg"
-bio: "A team of stylists creating luxury hair with personality — from seamless extensions and custom color to transformations that make you feel like <em>that girl</em>."
+bio: "A team of stylists creating luxury hair with personality — from seamless extensions and custom color to transformations that make you feel like \"that girl\"."
 services:
   - "Haircuts"
   - "Color"

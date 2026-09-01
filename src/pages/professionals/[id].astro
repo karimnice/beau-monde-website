@@ -90,18 +90,16 @@ const categoryLabels: Record<string, string> = {
         </div>
 
         {data.services && data.services.length > 0 && (
-          <div class="mt-8">
-            <h3 class="font-heading text-sm font-semibold tracking-wide uppercase text-charcoal">
-              Services
-            </h3>
-            <ul class="mt-3 flex flex-wrap gap-2">
-              {data.services.map((service) => (
-                <li class="rounded-full border border-gray-200 px-3 py-1 text-sm text-muted">
-                  {service}
-                </li>
-              ))}
-            </ul>
-          </div>
+          <p class="mt-8 font-heading text-xs leading-loose font-semibold tracking-[0.1em] text-gold-dark uppercase">
+            {data.services.map((service, i) => (
+              <>
+                {service}
+                {i < data.services.length - 1 && (
+                  <span class="mx-2 font-normal text-gold">&middot;</span>
+                )}
+              </>
+            ))}
+          </p>
         )}
 
         {/* Actions */}
