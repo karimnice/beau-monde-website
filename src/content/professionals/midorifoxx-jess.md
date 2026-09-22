@@ -21,6 +21,8 @@ services:
   - "Vivids"
   - "Calico Hair"
 instagram: "https://www.instagram.com/midorifoxx"
+phone: "567-938-0108"
+contactNote: "For appointments, please text."
 suite: "Suite 2B"
 order: 20
 ---
