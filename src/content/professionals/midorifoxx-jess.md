@@ -20,6 +20,7 @@ services:
   - "Lived-In Color"
   - "Vivids"
   - "Calico Hair"
+instagram: "https://www.instagram.com/midorifoxx"
 suite: "Suite 2B"
 order: 20
 ---
