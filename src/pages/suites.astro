@@ -22,7 +22,7 @@ const included = [
 
 <Layout
   title="Available Suites | Beau Monde Salon Suites"
-  description="One double suite now leasing at Beau Monde Salon Suites in Holly Springs, NC. Suite 2 available now — with a move-in incentive."
+  description="Half of a double suite (Suite 2A) now leasing at Beau Monde Salon Suites in Holly Springs, NC — with a move-in incentive."
   footerShowPhone
 >
   {/* Hero */}
@@ -32,10 +32,10 @@ const included = [
         Now Leasing
       </p>
       <h1 class="mt-3 font-heading text-4xl font-bold text-charcoal md:text-5xl">
-        One Double Suite Open
+        One Suite Open
       </h1>
       <p class="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-muted">
-        One of our largest, brightest suites is available now &mdash; fully
+        Half of one of our double suites is available now &mdash; fully
         equipped and ready for the next beauty professional to call home.
       </p>
     </div>
@@ -81,7 +81,7 @@ const included = [
   {/* Suite cards */}
   <section class="mx-auto max-w-6xl px-6 py-16">
     <div class="mx-auto grid max-w-md gap-10">
-      {/* Suite 2 */}
+      {/* Suite 2A */}
       <article class="overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-gray-100">
         <div class="relative">
           <Image
@@ -97,15 +97,16 @@ const included = [
         </div>
         <div class="p-7">
           <h2 class="font-heading text-2xl font-bold text-charcoal">
-            Suite 2 &mdash; Double
+            Suite 2A &mdash; Single
           </h2>
           <p class="mt-1 text-sm text-muted">
-            Bright suite with a wall of windows facing the street.
+            Half of a double suite &mdash; Jess Szalai of MidoriFoxx is already
+            set up in the other half (Suite 2B).
           </p>
           <dl class="mt-5 space-y-2 border-t border-gray-100 pt-5 text-sm">
             <div class="flex justify-between">
               <dt class="text-muted">Weekly rent</dt>
-              <dd class="font-medium text-charcoal">$682.50</dd>
+              <dd class="font-medium text-charcoal">$341.25</dd>
             </div>
             <div class="flex justify-between">
               <dt class="text-muted">Additional fees</dt>
@@ -113,13 +114,13 @@ const included = [
             </div>
             <div class="flex justify-between">
               <dt class="text-muted">First 4 weeks</dt>
-              <dd class="font-medium text-gold">½ price ($341.25/wk)</dd>
+              <dd class="font-medium text-gold">½ price ($170.63/wk)</dd>
             </div>
           </dl>
           <Button
             href="tel:+19195518406"
             class="mt-6 w-full text-center"
-            data-tour-trigger="Suite 2"
+            data-tour-trigger="Suite 2A"
           >
             Schedule a Tour
           </Button>
@@ -139,7 +140,7 @@ const included = [
           What's Included
         </h2>
         <p class="mx-auto mt-3 max-w-2xl text-muted">
-          Each double suite is fully equipped &mdash; bring your tools and your clients.
+          Each suite is fully equipped &mdash; bring your tools and your clients.
         </p>
       </div>
       <ul class="mx-auto mt-10 grid max-w-3xl gap-3 sm:grid-cols-2">
@@ -176,17 +177,17 @@ const included = [
         class="block w-full"
         widths={[600, 900, 1200]}
       />
-      {/* Suite 2 marker */}
+      {/* Suite 2A marker — half of the Suite 2 footprint */}
       <div
         class="pointer-events-none absolute rounded-md ring-[3px] ring-gold animate-pulse"
-        style="left: 12%; top: 46%; width: 21%; height: 17%;"
+        style="left: 12%; top: 46%; width: 21%; height: 8.5%;"
       ></div>
     </div>
 
     <div class="mt-8 flex flex-wrap items-center justify-center gap-6 text-sm">
       <span class="inline-flex items-center gap-2">
         <span class="h-3 w-3 rounded-sm ring-2 ring-gold"></span>
-        <span class="text-charcoal">Suite 2 &mdash; Available Now</span>
+        <span class="text-charcoal">Suite 2A &mdash; Available Now</span>
       </span>
     </div>
   </section>
@@ -198,7 +199,7 @@ const included = [
         Ready to Tour a Suite?
       </h2>
       <p class="mt-4 text-gray-300">
-        Reach out to walk through Suite 2, or learn more about joining the Beau Monde family.
+        Reach out to walk through Suite 2A, or learn more about joining the Beau Monde family.
       </p>
       <div class="mt-8 flex flex-wrap justify-center gap-4">
         <Button href="tel:+19195518406" data-tour-trigger="general">Schedule a Tour</Button>
