@@ -1,6 +1,6 @@
 ---
 businessName: "Namesake Hair Studio"
-stylistName: "Sharon Maraschiello"
+stylistName: "Shannon Maraschiello"
 title: "Hair Stylist"
 category: "hair"
 photo: "../../assets/professionals/namesake-sharon.jpg"
